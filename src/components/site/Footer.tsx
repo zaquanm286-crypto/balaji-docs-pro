@@ -42,10 +42,13 @@ export function Footer() {
               </span>
             </li>
             <li className="flex gap-2"><MapPin className="mt-0.5 h-4 w-4 text-gold" />
-              <span>St. Thomas Town & Nagawara, Bengaluru</span>
+              <span>Davis Road & Nagawara, Bengaluru</span>
             </li>
             <li className="flex gap-2"><Clock className="mt-0.5 h-4 w-4 text-gold" />
-              <span>Mon – Sat: 9:30 AM – 7:30 PM</span>
+              <span>
+                <span className="block">Mon – Sat: 8:00 AM – 10:30 PM</span>
+                <span className="block">Sunday: 10:30 AM – 3:00 PM</span>
+              </span>
             </li>
           </ul>
         </div>

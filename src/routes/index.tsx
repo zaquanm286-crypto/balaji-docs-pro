@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Layout } from "@/components/site/Layout";
 import {
-  Phone, MessageCircle, ShieldCheck, Clock, IndianRupee, MapPin,
+  Phone, MessageCircle, ShieldCheck, Clock, IndianRupee, MapPin, Sparkles, FileCheck2,
   FileText, Building2, Landmark, Banknote, ScrollText, Home, Users, Award, CheckCircle2, ArrowRight, Star,
 } from "lucide-react";
 
@@ -156,6 +156,94 @@ function HomePage() {
               View All Services <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
+
+          {/* E-KHATA HIGHLIGHT */}
+          <div className="relative mt-16 overflow-hidden rounded-2xl border-2 border-gold bg-gradient-royal p-8 text-royal-foreground shadow-gold md:p-12">
+            <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-gold/20 blur-3xl" />
+            <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-gold/15 blur-3xl" />
+            <div className="relative flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
+              <div className="flex-1">
+                <span className="inline-flex items-center gap-2 rounded-full bg-gold px-3 py-1 text-xs font-bold uppercase tracking-widest text-gold-foreground">
+                  <Sparkles className="h-3.5 w-3.5" /> Most Requested
+                </span>
+                <h3 className="mt-4 font-display text-3xl font-extrabold md:text-4xl">
+                  <span className="text-gold">E-Khata</span> Registration & Transfer
+                </h3>
+                <p className="mt-3 max-w-2xl text-base text-white/90 md:text-lg">
+                  <strong className="text-gold">E-Khata is now mandatory</strong> for all property transactions, loans & sale deeds in Bangalore. We process E-Khata applications, transfers and BBMP coordination quickly with full documentation support.
+                </p>
+              </div>
+              <div className="flex flex-col gap-3">
+                <a href="tel:+919886122903" className="inline-flex items-center justify-center gap-2 rounded-md bg-gradient-gold px-6 py-3 font-bold text-gold-foreground shadow-gold hover:scale-105">
+                  <Phone className="h-5 w-5" /> Apply for E-Khata
+                </a>
+                <a href="https://wa.me/919886122903?text=I%20need%20E-Khata%20assistance" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-md border border-gold/60 bg-white/10 px-6 py-3 font-semibold hover:bg-white/20">
+                  <MessageCircle className="h-5 w-5" /> WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DOCUMENTS REQUIRED */}
+      <section className="mx-auto max-w-7xl px-4 py-20 md:px-8">
+        <div className="text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-gold">Checklist</p>
+          <h2 className="mt-3 font-display text-3xl font-bold text-primary md:text-4xl">Documents Required</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            Keep these documents ready to ensure smooth and hassle-free property registration & documentation.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="rounded-2xl border bg-card p-6 shadow-card md:p-8">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
+                <FileCheck2 className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-display text-xl font-bold text-primary">Primary Documents</h3>
+            </div>
+            <ul className="mt-5 space-y-3">
+              {[
+                "Registered Sale Deed",
+                "Aadhaar Card (Buyer & Seller)",
+                "Recent Property Tax Receipt",
+                "Photograph of the Property",
+              ].map((d) => (
+                <li key={d} className="flex items-start gap-3 rounded-lg bg-secondary/50 p-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                  <span className="text-sm font-medium text-foreground">{d}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="rounded-2xl border bg-card p-6 shadow-card md:p-8">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-royal text-gold">
+                <FileCheck2 className="h-6 w-6" />
+              </div>
+              <h3 className="font-display text-xl font-bold text-primary">Other Essential Documents</h3>
+            </div>
+            <ul className="mt-5 space-y-3">
+              {[
+                "10-digit BESCOM Electricity Account Number",
+                "Encumbrance Certificate (EC)",
+                "Occupancy Certificate (for apartments)",
+                "Approved Building Plan (for apartments)",
+              ].map((d) => (
+                <li key={d} className="flex items-start gap-3 rounded-lg bg-secondary/50 p-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                  <span className="text-sm font-medium text-foreground">{d}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-8 rounded-xl border border-gold/40 bg-gold/10 p-5 text-center text-sm text-foreground">
+          Not sure which documents apply to your case? <a href="tel:+919886122903" className="font-semibold text-primary underline-offset-2 hover:underline">Call 98861 22903</a> for a personalised checklist.
         </div>
       </section>
 
