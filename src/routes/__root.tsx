@@ -14,7 +14,7 @@ const localBusinessSchema = {
     {
       "@type": "PostalAddress",
       streetAddress:
-        "#13, 15th Cross, Davis Road, Opposite Citizen School Office, Next to Nusrath Fathima School, St. Thomas Town Post",
+        "#13, 15th Cross, Davis Road, Opposite Citizen School Office, Next to Nusrath Fathima School",
       addressLocality: "Bengaluru",
       postalCode: "560084",
       addressCountry: "IN",
@@ -28,7 +28,7 @@ const localBusinessSchema = {
       addressCountry: "IN",
     },
   ],
-  openingHours: "Mo-Sa 09:30-19:30",
+  openingHours: ["Mo-Sa 08:00-22:30", "Su 10:30-15:00"],
 };
 
 function NotFoundComponent() {

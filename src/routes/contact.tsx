@@ -7,7 +7,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact – Sri Balaji Enterprises | Bangalore Documentation Consultancy" },
-      { name: "description", content: "Visit our offices at St. Thomas Town or Nagawara, Bengaluru. Call 98861 22903 / 90191 62841 / 86600 78017." },
+      { name: "description", content: "Visit our offices at Davis Road or Nagawara, Bengaluru. Call 98861 22903 / 90191 62841 / 86600 78017." },
       { property: "og:title", content: "Contact Sri Balaji Enterprises" },
       { property: "og:description", content: "Get in touch for property registration & documentation help in Bangalore." },
     ],
@@ -17,9 +17,9 @@ export const Route = createFileRoute("/contact")({
 
 const offices = [
   {
-    name: "Office 1 — St. Thomas Town",
-    address: "#13, 15th Cross, Davis Road, Opposite Citizen School Office, Next to Nusrath Fathima School, St. Thomas Town Post, Bangalore – 560084",
-    map: "https://www.google.com/maps?q=St+Thomas+Town+Davis+Road+Bangalore&output=embed",
+    name: "Office 1 — Davis Road",
+    address: "#13, 15th Cross, Davis Road, Opposite Citizen School Office, Next to Nusrath Fathima School, Bangalore – 560084",
+    map: "https://www.google.com/maps?q=Davis+Road+15th+Cross+Bangalore+560084&output=embed",
   },
   {
     name: "Office 2 — Nagawara",
@@ -42,6 +42,13 @@ function ContactPage() {
       />
 
       <section className="mx-auto max-w-7xl px-4 py-16 md:px-8">
+        <div className="mb-10 rounded-2xl border bg-card p-6 shadow-card md:p-8">
+          <h3 className="font-display text-xl font-bold text-primary md:text-2xl">Business Hours</h3>
+          <div className="mt-3 grid gap-2 text-sm text-foreground md:grid-cols-2">
+            <p><span className="font-semibold text-primary">Monday – Saturday:</span> 8:00 AM – 10:30 PM</p>
+            <p><span className="font-semibold text-primary">Sunday:</span> 10:30 AM – 3:00 PM</p>
+          </div>
+        </div>
         <div className="grid gap-6 md:grid-cols-3">
           {phones.map((p) => (
             <a
