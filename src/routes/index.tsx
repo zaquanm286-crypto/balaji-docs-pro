@@ -3,6 +3,7 @@ import { Layout } from "@/components/site/Layout";
 import {
   Phone, MessageCircle, ShieldCheck, Clock, IndianRupee, MapPin, Sparkles, FileCheck2,
   FileText, Building2, Landmark, Banknote, ScrollText, Home, Users, Award, CheckCircle2, ArrowRight, Star,
+  Stamp, Globe, IdCard, Receipt,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
