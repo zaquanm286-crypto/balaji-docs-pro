@@ -3,6 +3,7 @@ import { Layout } from "@/components/site/Layout";
 import {
   Phone, MessageCircle, ShieldCheck, Clock, IndianRupee, MapPin, Sparkles, FileCheck2,
   FileText, Building2, Landmark, Banknote, ScrollText, Home, Users, Award, CheckCircle2, ArrowRight, Star,
+  Stamp, Globe, IdCard, Receipt,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -183,6 +184,122 @@ function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* E-STAMPING HIGHLIGHT */}
+      <section className="mx-auto max-w-7xl px-4 py-20 md:px-8">
+        <div className="text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-gold">Now Available</p>
+          <h2 className="mt-3 font-display text-3xl font-bold text-primary md:text-4xl">
+            E-Stamping Services in Bangalore
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            A secure, digital way to pay non-judicial stamp duty — managed via SHCIL & the Kaveri Online Services portal. We handle the entire process for you.
+          </p>
+        </div>
+
+        <div className="relative mt-12 overflow-hidden rounded-2xl border-2 border-gold bg-gradient-royal p-8 text-royal-foreground shadow-gold md:p-12">
+          <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-gold/20 blur-3xl" />
+          <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-gold/15 blur-3xl" />
+          <div className="relative flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
+            <div className="flex-1">
+              <span className="inline-flex items-center gap-2 rounded-full bg-gold px-3 py-1 text-xs font-bold uppercase tracking-widest text-gold-foreground">
+                <Stamp className="h-3.5 w-3.5" /> Secure & Digital
+              </span>
+              <h3 className="mt-4 font-display text-3xl font-extrabold md:text-4xl">
+                <span className="text-gold">E-Stamp</span> Paper & Stamp Duty Payment
+              </h3>
+              <p className="mt-3 max-w-2xl text-base text-white/90 md:text-lg">
+                Get <strong className="text-gold">e-stamped documents</strong> for sale deeds, rental agreements, affidavits, POA, mortgages and more — quickly and reliably.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <a href="tel:+919886122903" className="inline-flex items-center justify-center gap-2 rounded-md bg-gradient-gold px-6 py-3 font-bold text-gold-foreground shadow-gold hover:scale-105">
+                <Phone className="h-5 w-5" /> Get E-Stamp Now
+              </a>
+              <a href="https://wa.me/919886122903?text=I%20need%20E-Stamping%20assistance" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-md border border-gold/60 bg-white/10 px-6 py-3 font-semibold hover:bg-white/20">
+                <MessageCircle className="h-5 w-5" /> WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="rounded-2xl border bg-card p-6 shadow-card">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
+                <IdCard className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-display text-lg font-bold text-primary">Core Requirements</h3>
+            </div>
+            <ul className="mt-5 space-y-3">
+              {[
+                "Draft document (agreement, deed or affidavit)",
+                "KYC: Aadhaar, PAN or Passport of all parties",
+                "Full names, addresses & purpose of document",
+                "Property address & market value (for deeds)",
+              ].map((d) => (
+                <li key={d} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                  <span className="text-sm text-foreground">{d}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="rounded-2xl border bg-card p-6 shadow-card">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-royal text-gold">
+                <Receipt className="h-6 w-6" />
+              </div>
+              <h3 className="font-display text-lg font-bold text-primary">Common Uses</h3>
+            </div>
+            <ul className="mt-5 space-y-3">
+              {[
+                "Property deeds — Sale, Mortgage, Gift, Conveyance",
+                "Rental / Lease agreements",
+                "Partnership deeds",
+                "Affidavits, Indemnity Bonds & Power of Attorney",
+              ].map((d) => (
+                <li key={d} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                  <span className="text-sm text-foreground">{d}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="rounded-2xl border bg-card p-6 shadow-card">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
+                <Globe className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-display text-lg font-bold text-primary">Where to Get It</h3>
+            </div>
+            <ul className="mt-5 space-y-3">
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                <span className="text-sm text-foreground"><strong>Online:</strong> Kaveri Online Services portal</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                <span className="text-sm text-foreground"><strong>Physical:</strong> Authorized Collection Centres (ACCs)</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                <span className="text-sm text-foreground">BangaloreOne, Apex Bank & designated Post Offices</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                <span className="text-sm text-foreground"><strong>With Us:</strong> End-to-end assistance — no queues</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-8 rounded-xl border border-gold/40 bg-gold/10 p-5 text-center text-sm text-foreground">
+          Need an e-stamped document urgently? <a href="tel:+919886122903" className="font-semibold text-primary underline-offset-2 hover:underline">Call 98861 22903</a> — we deliver same-day in most cases.
         </div>
       </section>
 
