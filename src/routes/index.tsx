@@ -305,7 +305,7 @@ function HomePage() {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
           <div className="rounded-2xl border bg-card p-6 shadow-card">
             <div className="flex items-center gap-3">
               <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
