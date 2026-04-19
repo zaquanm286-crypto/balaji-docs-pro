@@ -199,73 +199,6 @@ function HomePage() {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          <div className="rounded-2xl border bg-card p-6 shadow-card">
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
-                <FileCheck2 className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="font-display text-lg font-bold text-primary">Documents Needed</h3>
-            </div>
-            <ul className="mt-5 space-y-3">
-              {[
-                "Sale Deed / Title Document",
-                "Latest Property Tax Receipt",
-                "Aadhaar Card of the owner",
-                "Encumbrance Certificate (EC)",
-              ].map((d) => (
-                <li key={d} className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
-                  <span className="text-sm text-foreground">{d}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="rounded-2xl border bg-card p-6 shadow-card">
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-royal text-gold">
-                <ShieldCheck className="h-6 w-6" />
-              </div>
-              <h3 className="font-display text-lg font-bold text-primary">Why It's Mandatory</h3>
-            </div>
-            <ul className="mt-5 space-y-3">
-              {[
-                "Required for all property sale & purchase",
-                "Mandatory for home loans & mortgages",
-                "Needed for property tax payment",
-                "Proof of legal property ownership",
-              ].map((d) => (
-                <li key={d} className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
-                  <span className="text-sm text-foreground">{d}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="rounded-2xl border bg-card p-6 shadow-card">
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
-                <Clock className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="font-display text-lg font-bold text-primary">Our Process</h3>
-            </div>
-            <ul className="mt-5 space-y-3">
-              {[
-                "Document verification & review",
-                "Online BBMP application filing",
-                "Direct follow-up with BBMP officials",
-                "E-Khata delivered to your hands",
-              ].map((d) => (
-                <li key={d} className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
-                  <span className="text-sm text-foreground">{d}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
 
         <div className="mt-8 rounded-xl border border-gold/40 bg-gold/10 p-5 text-center text-sm text-foreground">
           Confused about your E-Khata status? <a href="tel:+919886122903" className="font-semibold text-primary underline-offset-2 hover:underline">Call 98861 22903</a> for a free eligibility check.
@@ -417,32 +350,6 @@ function HomePage() {
             </ul>
           </div>
 
-          <div className="rounded-2xl border bg-card p-6 shadow-card">
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
-                <Globe className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="font-display text-lg font-bold text-primary">Where to Get It</h3>
-            </div>
-            <ul className="mt-5 space-y-3">
-              <li className="flex items-start gap-3">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
-                <span className="text-sm text-foreground"><strong>Online:</strong> Kaveri Online Services portal</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
-                <span className="text-sm text-foreground"><strong>Physical:</strong> Authorized Collection Centres (ACCs)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
-                <span className="text-sm text-foreground">BangaloreOne, Apex Bank & designated Post Offices</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
-                <span className="text-sm text-foreground"><strong>With Us:</strong> End-to-end assistance — no queues</span>
-              </li>
-            </ul>
-          </div>
         </div>
 
         <div className="mt-8 rounded-xl border border-gold/40 bg-gold/10 p-5 text-center text-sm text-foreground">
