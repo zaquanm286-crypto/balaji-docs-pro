@@ -270,6 +270,68 @@ function HomePage() {
         <div className="mt-8 rounded-xl border border-gold/40 bg-gold/10 p-5 text-center text-sm text-foreground">
           Confused about your E-Khata status? <a href="tel:+919886122903" className="font-semibold text-primary underline-offset-2 hover:underline">Call 98861 22903</a> for a free eligibility check.
         </div>
+
+        {/* DOCUMENTS REQUIRED — grouped with E-Khata */}
+        <div className="mt-16 text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-gold">Checklist</p>
+          <h2 className="mt-3 font-display text-3xl font-bold text-primary md:text-4xl">Documents Required</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            Keep these documents ready to ensure smooth and hassle-free property registration, E-Khata & documentation.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="rounded-2xl border bg-card p-6 shadow-card md:p-8">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
+                <FileCheck2 className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-display text-xl font-bold text-primary">Primary Documents</h3>
+            </div>
+            <ul className="mt-5 space-y-3">
+              {[
+                "Registered Sale Deed",
+                "Aadhaar Card (Buyer & Seller)",
+                "Recent Property Tax Receipt",
+                "Photograph of the Property",
+                "A Khata / B Khata Certificate & Extract",
+              ].map((d) => (
+                <li key={d} className="flex items-start gap-3 rounded-lg bg-secondary/50 p-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                  <span className="text-sm font-medium text-foreground">{d}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="rounded-2xl border bg-card p-6 shadow-card md:p-8">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-royal text-gold">
+                <FileCheck2 className="h-6 w-6" />
+              </div>
+              <h3 className="font-display text-xl font-bold text-primary">Other Essential Documents</h3>
+            </div>
+            <ul className="mt-5 space-y-3">
+              {[
+                "10-digit BESCOM Electricity Account Number",
+                "Latest BESCOM Electricity Bill",
+                "BWSSB Water Bill / Connection Details",
+                "Encumbrance Certificate (EC)",
+                "Occupancy Certificate (for apartments)",
+                "Approved Building Plan (for apartments)",
+              ].map((d) => (
+                <li key={d} className="flex items-start gap-3 rounded-lg bg-secondary/50 p-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                  <span className="text-sm font-medium text-foreground">{d}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-8 rounded-xl border border-gold/40 bg-gold/10 p-5 text-center text-sm text-foreground">
+          Not sure which documents apply to your case? <a href="tel:+919886122903" className="font-semibold text-primary underline-offset-2 hover:underline">Call 98861 22903</a> for a personalised checklist.
+        </div>
       </section>
 
       {/* E-STAMPING HIGHLIGHT */}
@@ -385,67 +447,6 @@ function HomePage() {
 
         <div className="mt-8 rounded-xl border border-gold/40 bg-gold/10 p-5 text-center text-sm text-foreground">
           Need an e-stamped document urgently? <a href="tel:+919886122903" className="font-semibold text-primary underline-offset-2 hover:underline">Call 98861 22903</a> — we deliver same-day in most cases.
-        </div>
-      </section>
-
-      {/* DOCUMENTS REQUIRED */}
-      <section className="mx-auto max-w-7xl px-4 py-20 md:px-8">
-        <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-gold">Checklist</p>
-          <h2 className="mt-3 font-display text-3xl font-bold text-primary md:text-4xl">Documents Required</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Keep these documents ready to ensure smooth and hassle-free property registration & documentation.
-          </p>
-        </div>
-
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="rounded-2xl border bg-card p-6 shadow-card md:p-8">
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
-                <FileCheck2 className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="font-display text-xl font-bold text-primary">Primary Documents</h3>
-            </div>
-            <ul className="mt-5 space-y-3">
-              {[
-                "Registered Sale Deed",
-                "Aadhaar Card (Buyer & Seller)",
-                "Recent Property Tax Receipt",
-                "Photograph of the Property",
-              ].map((d) => (
-                <li key={d} className="flex items-start gap-3 rounded-lg bg-secondary/50 p-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
-                  <span className="text-sm font-medium text-foreground">{d}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="rounded-2xl border bg-card p-6 shadow-card md:p-8">
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-royal text-gold">
-                <FileCheck2 className="h-6 w-6" />
-              </div>
-              <h3 className="font-display text-xl font-bold text-primary">Other Essential Documents</h3>
-            </div>
-            <ul className="mt-5 space-y-3">
-              {[
-                "10-digit BESCOM Electricity Account Number",
-                "Encumbrance Certificate (EC)",
-                "Occupancy Certificate (for apartments)",
-                "Approved Building Plan (for apartments)",
-              ].map((d) => (
-                <li key={d} className="flex items-start gap-3 rounded-lg bg-secondary/50 p-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
-                  <span className="text-sm font-medium text-foreground">{d}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        <div className="mt-8 rounded-xl border border-gold/40 bg-gold/10 p-5 text-center text-sm text-foreground">
-          Not sure which documents apply to your case? <a href="tel:+919886122903" className="font-semibold text-primary underline-offset-2 hover:underline">Call 98861 22903</a> for a personalised checklist.
         </div>
       </section>
 
