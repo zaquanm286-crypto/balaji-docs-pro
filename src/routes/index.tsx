@@ -158,32 +158,117 @@ function HomePage() {
             </Link>
           </div>
 
-          {/* E-KHATA HIGHLIGHT */}
-          <div className="relative mt-16 overflow-hidden rounded-2xl border-2 border-gold bg-gradient-royal p-8 text-royal-foreground shadow-gold md:p-12">
-            <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-gold/20 blur-3xl" />
-            <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-gold/15 blur-3xl" />
-            <div className="relative flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
-              <div className="flex-1">
-                <span className="inline-flex items-center gap-2 rounded-full bg-gold px-3 py-1 text-xs font-bold uppercase tracking-widest text-gold-foreground">
-                  <Sparkles className="h-3.5 w-3.5" /> Most Requested
-                </span>
-                <h3 className="mt-4 font-display text-3xl font-extrabold md:text-4xl">
-                  <span className="text-gold">E-Khata</span> Registration & Transfer
-                </h3>
-                <p className="mt-3 max-w-2xl text-base text-white/90 md:text-lg">
-                  <strong className="text-gold">E-Khata is now mandatory</strong> for all property transactions, loans & sale deeds in Bangalore. We process E-Khata applications, transfers and BBMP coordination quickly with full documentation support.
-                </p>
-              </div>
-              <div className="flex flex-col gap-3">
-                <a href="tel:+919886122903" className="inline-flex items-center justify-center gap-2 rounded-md bg-gradient-gold px-6 py-3 font-bold text-gold-foreground shadow-gold hover:scale-105">
-                  <Phone className="h-5 w-5" /> Apply for E-Khata
-                </a>
-                <a href="https://wa.me/919886122903?text=I%20need%20E-Khata%20assistance" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-md border border-gold/60 bg-white/10 px-6 py-3 font-semibold hover:bg-white/20">
-                  <MessageCircle className="h-5 w-5" /> WhatsApp
-                </a>
-              </div>
+        </div>
+      </section>
+
+      {/* E-KHATA HIGHLIGHT */}
+      <section className="mx-auto max-w-7xl px-4 py-20 md:px-8">
+        <div className="text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-gold">Most Requested</p>
+          <h2 className="mt-3 font-display text-3xl font-bold text-primary md:text-4xl">
+            E-Khata Registration & Transfer
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            E-Khata is now <strong className="text-primary">mandatory</strong> for all property transactions, loans & sale deeds in Bangalore. We handle BBMP coordination end-to-end.
+          </p>
+        </div>
+
+        <div className="relative mt-12 overflow-hidden rounded-2xl border-2 border-gold bg-gradient-royal p-8 text-royal-foreground shadow-gold md:p-12">
+          <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-gold/20 blur-3xl" />
+          <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-gold/15 blur-3xl" />
+          <div className="relative flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
+            <div className="flex-1">
+              <span className="inline-flex items-center gap-2 rounded-full bg-gold px-3 py-1 text-xs font-bold uppercase tracking-widest text-gold-foreground">
+                <Sparkles className="h-3.5 w-3.5" /> Mandatory in Bangalore
+              </span>
+              <h3 className="mt-4 font-display text-3xl font-extrabold md:text-4xl">
+                <span className="text-gold">E-Khata</span> Made Simple
+              </h3>
+              <p className="mt-3 max-w-2xl text-base text-white/90 md:text-lg">
+                Get your <strong className="text-gold">E-Khata processed quickly</strong> with full documentation support — applications, transfers and BBMP coordination handled by experts.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <a href="tel:+919886122903" className="inline-flex items-center justify-center gap-2 rounded-md bg-gradient-gold px-6 py-3 font-bold text-gold-foreground shadow-gold hover:scale-105">
+                <Phone className="h-5 w-5" /> Apply for E-Khata
+              </a>
+              <a href="https://wa.me/919886122903?text=I%20need%20E-Khata%20assistance" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-md border border-gold/60 bg-white/10 px-6 py-3 font-semibold hover:bg-white/20">
+                <MessageCircle className="h-5 w-5" /> WhatsApp
+              </a>
             </div>
           </div>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="rounded-2xl border bg-card p-6 shadow-card">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
+                <FileCheck2 className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-display text-lg font-bold text-primary">Documents Needed</h3>
+            </div>
+            <ul className="mt-5 space-y-3">
+              {[
+                "Sale Deed / Title Document",
+                "Latest Property Tax Receipt",
+                "Aadhaar Card of the owner",
+                "Encumbrance Certificate (EC)",
+              ].map((d) => (
+                <li key={d} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                  <span className="text-sm text-foreground">{d}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="rounded-2xl border bg-card p-6 shadow-card">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-royal text-gold">
+                <ShieldCheck className="h-6 w-6" />
+              </div>
+              <h3 className="font-display text-lg font-bold text-primary">Why It's Mandatory</h3>
+            </div>
+            <ul className="mt-5 space-y-3">
+              {[
+                "Required for all property sale & purchase",
+                "Mandatory for home loans & mortgages",
+                "Needed for property tax payment",
+                "Proof of legal property ownership",
+              ].map((d) => (
+                <li key={d} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                  <span className="text-sm text-foreground">{d}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="rounded-2xl border bg-card p-6 shadow-card">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
+                <Clock className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-display text-lg font-bold text-primary">Our Process</h3>
+            </div>
+            <ul className="mt-5 space-y-3">
+              {[
+                "Document verification & review",
+                "Online BBMP application filing",
+                "Direct follow-up with BBMP officials",
+                "E-Khata delivered to your hands",
+              ].map((d) => (
+                <li key={d} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                  <span className="text-sm text-foreground">{d}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-8 rounded-xl border border-gold/40 bg-gold/10 p-5 text-center text-sm text-foreground">
+          Confused about your E-Khata status? <a href="tel:+919886122903" className="font-semibold text-primary underline-offset-2 hover:underline">Call 98861 22903</a> for a free eligibility check.
         </div>
       </section>
 
