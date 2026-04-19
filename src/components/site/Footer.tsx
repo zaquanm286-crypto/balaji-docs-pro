@@ -55,7 +55,7 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-white/70 md:flex-row md:px-8">
-          <p>© 2026 Sri Balaji Enterprises (Proprietor: Srikanth G.S., B.Com LLB) – All Rights Reserved</p>
+          <p>© 2026 Sri Balaji Enterprises – Proprietor: Srikanth G.S., B.Com (LLB) – All Rights Reserved</p>
           <p>Serving Bangalore with Trusted Registration & Documentation Services</p>
         </div>
       </div>
